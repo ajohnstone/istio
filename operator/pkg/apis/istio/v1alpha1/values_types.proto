@@ -72,6 +72,9 @@ message CNIConfig {
   google.protobuf.BoolValue chained = 14;
 
   CNITaintConfig taint  = 15;
+
+  google.protobuf.BoolValue privileged = 16;
+
 }
 
 
@@ -773,7 +776,7 @@ message TelemetryV2StackDriverConfig {
 
   google.protobuf.BoolValue monitoring = 3;
 
-  google.protobuf.BoolValue topology = 4 [deprecated=true];
+  google.protobuf.BoolValue topology = 4;
 
   google.protobuf.BoolValue disableOutbound = 6;
 
